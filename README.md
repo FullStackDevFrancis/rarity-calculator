@@ -1,27 +1,24 @@
-# RarityCalculator
+# Rarity calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+Rarity calculator is a website for calculating a rarity of an NFT (non fungible token).
+
+## Installation
+
+Use the node package manager [npm](https://nodejs.org/en/download/) to install dependencies.
+
+```bash
+npm install 
+```
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Build
+Please make sure to update tests as appropriate.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Collaboration
+The rarity calculator is created for [Eight Bit Mafia](https://eightbitmafia.com/)
