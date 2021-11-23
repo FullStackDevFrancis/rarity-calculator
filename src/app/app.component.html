@@ -1,5 +1,63 @@
 <!-- TOOLBAR -->
-<h1>Rarity calculator</h1>
+<mat-toolbar color="primary">
+  <span>Rarity calculator</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="background">
+  <div class="form2">
+    <h2>Rarity calculator properties</h2>
+
+    <!-- Background -->
+    <label class="space">Background</label> <br>
+    <mat-form-field appearance="outline">
+      <mat-select>
+        <mat-option *ngFor="let background of allBackgrounds" [value]="background">{{background}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Skins -->
+    <label class="space">Skins</label> <br>
+    <mat-form-field appearance="outline">
+      <mat-select>
+        <mat-option *ngFor="let skin of allSkins" [value]="skin">{{skin}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Clothes -->
+    <label class="space">Clothes</label> <br>
+    <mat-form-field appearance="outline">
+      <mat-select>
+        <mat-option *ngFor="let cloth of allClothes" [value]="cloth">{{cloth}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Facial hair -->
+    <label class="space">Facial hair</label> <br>
+    <mat-form-field appearance="outline">
+      <mat-select>
+        <mat-option *ngFor="let hair of allFacialHair" [value]="hair">{{hair}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Hair -->
+    <label class="space">Hair</label> <br>
+    <mat-form-field appearance="outline">
+      <mat-select>
+        <mat-option *ngFor="let hair of allHair" [value]="hair">{{hair}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
+
 
 <!-- Other components -->
-<router-outlet></router-outlet>
