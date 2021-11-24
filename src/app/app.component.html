@@ -14,45 +14,86 @@
   <div class="form2">
     <h2>Rarity calculator properties</h2>
 
-    <!-- Background -->
-    <label class="space">Background</label> <br>
-    <mat-form-field appearance="outline">
-      <mat-select>
-        <mat-option *ngFor="let background of allBackgrounds" [value]="background">{{background}}</mat-option>
-      </mat-select>
-    </mat-form-field>
+    <div class="flex">
 
-    <!-- Skins -->
-    <label class="space">Skins</label> <br>
-    <mat-form-field appearance="outline">
-      <mat-select>
-        <mat-option *ngFor="let skin of allSkins" [value]="skin">{{skin}}</mat-option>
-      </mat-select>
-    </mat-form-field>
+      <div class="column">
+        <!-- Background -->
+        <label class="space">Background</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let background of allBackgrounds" [value]="background">{{background}}</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-    <!-- Clothes -->
-    <label class="space">Clothes</label> <br>
-    <mat-form-field appearance="outline">
-      <mat-select>
-        <mat-option *ngFor="let cloth of allClothes" [value]="cloth">{{cloth}}</mat-option>
-      </mat-select>
-    </mat-form-field>
+        <!-- Skins -->
+        <label class="space">Skins</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let skin of allSkins" [value]="skin">{{skin}}</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-    <!-- Facial hair -->
-    <label class="space">Facial hair</label> <br>
-    <mat-form-field appearance="outline">
-      <mat-select>
-        <mat-option *ngFor="let hair of allFacialHair" [value]="hair">{{hair}}</mat-option>
-      </mat-select>
-    </mat-form-field>
+        <!-- Clothes -->
+        <label class="space">Clothes</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let cloth of allClothes" [value]="cloth">{{cloth}}</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-    <!-- Hair -->
-    <label class="space">Hair</label> <br>
-    <mat-form-field appearance="outline">
-      <mat-select>
-        <mat-option *ngFor="let hair of allHair" [value]="hair">{{hair}}</mat-option>
-      </mat-select>
-    </mat-form-field>
+        <!-- Facial hair -->
+        <label class="space">Facial hair</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let hair of allFacialHair" [value]="hair">{{hair}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="column">
+        <!-- Hair -->
+        <label class="space">Hair</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let hair of allHair" [value]="hair">{{hair}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Headwair -->
+        <label class="space">Headwair</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let headwair of allHeadWear" [value]="headwair">{{headwair}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Glasses -->
+        <label class="space">Glasses</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let glass of allGlasses" [value]="glass">{{glass}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Weapons -->
+        <label class="space">Weapons</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let weapon of allWeapons" [value]="weapon">{{weapon}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Accessoires -->
+        <label class="space">Accessories</label> <br>
+        <mat-form-field appearance="outline">
+          <mat-select>
+            <mat-option *ngFor="let accessory of allAccessories" [value]="accessory">{{accessory}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+
+    </div>
 
     <router-outlet></router-outlet>
 
